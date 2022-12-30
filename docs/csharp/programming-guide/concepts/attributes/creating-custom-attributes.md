@@ -26,7 +26,7 @@ public class AuthorAttribute : System.Attribute
 }  
 ```  
   
- The class name `AuthorAttribute` is the attribute's name, `Author`, plus the `Attribute` suffix. It is derived from `System.Attribute`, so it is a custom attribute class. The constructor's parameters are the custom attribute's positional parameters. In this example, `name` is a positional parameter. Any public read-write fields or properties are named parameters. In this case, `version` is the only named parameter. Note the use of the `AttributeUsage` attribute to make the `Author` attribute valid only on class and `struct` declarations.  
+ The class name `AuthorAttribute` is the attribute's name, `Author`, plus the `Attribute` suffix. It is derived from `System.Attribute`, so it is a custom attribute class. The constructor's parameters are the custom attribute's positional parameters. In this example, `name` is a positional parameter. Any public read-write fields or properties are named parameters. In this case, `version` is the only named parameter. Note the use of the `AttributeUsage` attribute to make the `Author` attribute valid only on `class` and `struct` declarations.  
   
  You could use this new attribute as follows:  
   
